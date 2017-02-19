@@ -1,8 +1,8 @@
 function search(arr, val) {
   var middleIndex = Math.floor(arr.length / 2);
   var middleValue = arr[middleIndex];
-  var left = [].concat(arr.slice(0, middleIndex));
-  var right = [].concat(arr.slice(middleIndex + 1));
+  var left = arr.slice(0, middleIndex);
+  var right = arr.slice(middleIndex + 1)
 
   if(middleValue === val) {
     return middleValue;
